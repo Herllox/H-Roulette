@@ -1,0 +1,44 @@
+settings:
+  inventory:
+    menu: "&5Roulette &7>>"
+    money-add: "&aAjout d'argent"
+    money-add-lore:
+      - "&fInformations:"
+      - "  &f• &7Clique gauche(&a+&e100&7)"
+      - "  &f• &7Clique droit(&a+&e1000&7)"
+      - "  &f• &7Shift clique gauche(&a+&e10000&7)"
+    money-remove: "&cRetrait d'agent "
+    money-remove-lore:
+      - "&fInformations:"
+      - "  &f• &7Clique gauche(&c-&e100&7)"
+      - "  &f• &7Clique droit(&c-&e1000&7)"
+      - "  &f• &7Shift clique gauche(&c-&e10000&7)"
+    select: "&bSelecteur"
+    select-lore:
+      - "&fArgent en jeu: &e%bet%"
+      - "&fChoisissez une couleur:"
+      - " &f%select-icon% %black% &7(&ex&a1.5&7)"
+      - " &f%not-select-icon% %red% &7(&ex&a1.5&7)"
+      - " &f%not-select-icon% %green% &7(&ex&a5&7)"
+      - ""
+      - "&7Clique gauche pour lancer la roue."
+      - "&7Clique droit pour séléctionner une couleur."
+    select-icon: "→"
+    not-select-icon: "•"
+    red: "&cRouge"
+    black: "&8Noire"
+    green: "&aVert"
+
+  multiplier:
+    green: 5
+    red: 1.5
+    black: 1.5
+  max-bet: 1000000
+  min-bet: 100
+
+messages:
+  prefix: "&6Roulette &7>>"
+  max-bet: "%prefix% &cTu ne peux pas parrier plus de &e%max-bet%."
+  min-bet: "%prefix% &cTu ne peux pas parrier moins de &e%min-bet%."
+  need-money: "%prefix% &cTu n'as pas assez d'argent."
+  win-message: "%prefix% &aBravo en pariant &e%bet% &avous avez gagné &e%money%&a."

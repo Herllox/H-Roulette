@@ -1,0 +1,11 @@
+name: H-Roulette
+version: '${project.version}'
+main: fr.herllox.hroulette.HRoulette
+api-version: 1.19
+authors: [ Herllox ]
+description: Casino roulette plugin made by Herllox.
+depend:
+  - Vault
+commands:
+  roulette:
+    description: main command.

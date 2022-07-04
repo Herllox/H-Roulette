@@ -1,5 +1,6 @@
 package fr.herllox.hroulette.command;
 
+import fr.herllox.hroulette.HRoulette;
 import fr.herllox.hroulette.utils.inventoryUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -19,7 +20,7 @@ public class rouletteCommand implements CommandExecutor {
                     Inventory inv = inventoryUtil.mainInventory();
                     p.openInventory(inv);
 
-                }
+                }else p.sendMessage(HRoulette.getInstance().getConfig().getString("messages.permission").replace("%prefix%", HRoulette.getInstance().getConfig().getString("messages.prefix")).replace("&","§"));
             }
         }
 

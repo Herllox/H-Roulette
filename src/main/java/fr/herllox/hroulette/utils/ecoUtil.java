@@ -10,6 +10,9 @@ import static org.bukkit.Bukkit.getServer;
 
 public class ecoUtil {
 
+    /**
+     * API of Vault
+     * */
     public static Economy econ = null;
 
     public static boolean setupEconomy() {

@@ -26,7 +26,6 @@ public class redClick implements Listener {
         if (e.getView().getTitle().equalsIgnoreCase(HRoulette.getInstance().getConfig().getString("settings.inventory.menu").replace("&","§"))) {
             e.setCancelled(true);
             if (e.getInventory() == null || e.getCurrentItem() == null || e.getCurrentItem().getType() == null || !e.getCurrentItem().hasItemMeta()) {
-                p.closeInventory();
                 return;
             }
 

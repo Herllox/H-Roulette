@@ -1,44 +1,55 @@
+#   H-Roulette V-1.0
+#   Plugin made by Herllox (FR)
+#   Discord: Herllox#1716
+
 settings:
+  #Edit all the inventory text here.
   inventory:
     menu: "&5Roulette &7>>"
-    money-add: "&aAjout d'argent"
+    money-add: "&aAdding money"
     money-add-lore:
       - "&fInformations:"
-      - "  &f• &7Clique gauche(&a+&e100&7)"
-      - "  &f• &7Clique droit(&a+&e1000&7)"
-      - "  &f• &7Shift clique gauche(&a+&e10000&7)"
-    money-remove: "&cRetrait d'agent "
+      - "  &f• &7Left click(&a+&e100&7)"
+      - "  &f• &7Right click(&a+&e1000&7)"
+      - "  &f• &7Shift left click(&a+&e10000&7)"
+    money-remove: "&cWithdraw money"
     money-remove-lore:
       - "&fInformations:"
-      - "  &f• &7Clique gauche(&c-&e100&7)"
-      - "  &f• &7Clique droit(&c-&e1000&7)"
-      - "  &f• &7Shift clique gauche(&c-&e10000&7)"
-    select: "&bSelecteur"
+      - "  &f• &7Left click(&c-&e100&7)"
+      - "  &f• &7Right click(&c-&e1000&7)"
+      - "  &f• &7Shift left click(&c-&e10000&7)"
+    select: "&bSelector"
     select-lore:
-      - "&fArgent en jeu: &e%bet%"
-      - "&fChoisissez une couleur:"
+      - "&fMoney in game: &e%bet%"
+      - "&fChoose a color:"
       - " &f%select-icon% %black% &7(&ex&a1.5&7)"
       - " &f%not-select-icon% %red% &7(&ex&a1.5&7)"
       - " &f%not-select-icon% %green% &7(&ex&a5&7)"
       - ""
-      - "&7Clique gauche pour lancer la roue."
-      - "&7Clique droit pour séléctionner une couleur."
+      - "&7Left click to start."
+      - "&7Right click to choose a color."
+    red: "&cRed"
+    black: "&8Black"
+    green: "&aGreen"
     select-icon: "→"
     not-select-icon: "•"
-    red: "&cRouge"
-    black: "&8Noire"
-    green: "&aVert"
 
+  #Edit the amount the win bet was multiplied
+  #ex: you bet 100$ on the red and you won so 100$ become 150$
   multiplier:
     green: 5
     red: 1.5
     black: 1.5
+  #Set the maximum amount a player can bet.
   max-bet: 1000000
+  #Set the minimum amount a player can bet.
   min-bet: 100
 
+#You can edit all the message of the plugin here.
 messages:
   prefix: "&6Roulette &7>>"
-  max-bet: "%prefix% &cTu ne peux pas parrier plus de &e%max-bet%."
-  min-bet: "%prefix% &cTu ne peux pas parrier moins de &e%min-bet%."
-  need-money: "%prefix% &cTu n'as pas assez d'argent."
-  win-message: "%prefix% &aBravo en pariant &e%bet% &avous avez gagné &e%money%&a."
+  permission: "&cYou don't have permission to do that."
+  max-bet: "%prefix% &cYou can't bet more than &e%max-bet%."
+  min-bet: "%prefix% &cYou can't bet less than &e%min-bet%."
+  need-money: "%prefix% &cYou don't have enought money."
+  win-message: "%prefix% &aWell done betting &e%bet% &aand win &e%money%&a."

@@ -3,7 +3,6 @@ package fr.herllox.hroulette.runnable;
 import fr.herllox.hroulette.HRoulette;
 import fr.herllox.hroulette.utils.Util;
 import fr.herllox.hroulette.utils.inventoryUtil;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

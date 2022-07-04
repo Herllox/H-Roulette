@@ -8,6 +8,7 @@ import java.util.List;
 
 public class Util {
 
+    /** Util to get the lore*/
     public static List<String> getLore(String directory) {
         List<String> getLore = HRoulette.getInstance().getConfig().getStringList(directory);
         List<String> lore = new ArrayList<>();
@@ -23,17 +24,18 @@ public class Util {
         return lore;
     }
 
-
+    /**Util to get the select icon*/
     public static String getIcon(){
         return HRoulette.getInstance().getConfig().getString("settings.inventory.select-icon");
     }
-
+    /**Util to get the not selected icon*/
     public static String getNotIcon(){
         return HRoulette.getInstance().getConfig().getString("settings.inventory.not-select-icon");
     }
 
+    /**Util to send the win message and
+     *give the money to the player */
     public static void betWin(Player p, Double bet, Double money){
-
         p.sendMessage(HRoulette.getInstance().getConfig().getString("messages.win-message")
                 .replace("%prefix%", HRoulette.getInstance().getConfig().getString("messages.prefix"))
                 .replace("%bet%", bet.toString())
